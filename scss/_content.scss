@@ -1,0 +1,149 @@
+/*BODY */
+
+body {
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fontMain;
+}
+
+//Empiezan los BEM
+.titulo__importante {
+    padding: 10px;
+    margin: 10px;
+    color: $colorTitulo;
+}
+
+.titulo__importante--encabezado {
+    color: $colorTitulo;
+    text-align: center;
+    font-size: $fontSizeXxl;
+}
+
+.subtitulo__importante {
+    color: $colorTitulo;
+    text-align: center;
+    font-size: $fontSizeBig;
+}
+
+.subtitulo__compra {
+    color: $danger;
+    text-align: center;
+    font-size: $fontSizeMedium;
+    font-family: $fontMain;
+}
+
+.subtitulos {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+.imgS {
+    height: 350px;
+}
+
+.imgProds {
+    height: 250px;
+}
+
+.imgCarrusel {
+    height: 52vh;
+}
+
+.borderRadius {
+    border-radius: 5px;
+}
+
+.precios {
+    color: rgba(240, 162, 45, 0.856);
+    font-size: 1rem;
+}
+
+// operadores de SASS
+.titulo__importante--imagenHeroe {
+    width: 100%;
+    padding: 5px;
+    border-radius: 2%;
+    justify-items: center;
+    margin: 20px;
+}
+
+.form--color {
+    background-color: $mainColor;
+    color: $whiteColor;
+    font-size: $fontSizeMedium;
+}
+
+//Termina BEM (EN "_footer.scss" HAY MÁS BEM)
+
+/*Inicia contenido básico*/
+
+h3 {
+    font-size: $fontSizeMedium;
+    color: $whiteColor;
+}
+
+h4 {
+    font-size: $fontSizeMedium;
+    color: $whiteColor;
+}
+
+h5 {
+    font-size: $fontSizeMedium;
+    color: $whiteColor;
+}
+
+p {
+    color: #949292;
+    font-family: $fontMain;
+    word-spacing: 0.1rem;
+    font-size: 1rem;
+}
+
+.error404 {
+    color: rgba(240, 162, 45, 0.856);
+    font-family: $fontMain;
+    word-spacing: 0.2rem;
+    font-size: $fontSizeError404;
+    text-align: center;
+}
+
+//SECCIÓN CONTACTO (Aplicando MIXIN)
+@mixin boton ($colorBtn) {
+    @if $colorBtn=oscuro {
+        color: #212529;
+        border-color: #212529;
+        font-size: 3rem - 2rem;
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        &:hover {
+            color: #fff;
+            background-color: #212529;
+            border-color: #212529;
+        }
+    }
+    @else if $colorBtn=claro {
+        &:hover {
+            color: #212529;
+            background-color: #fff;
+            border-color: #fff;
+        }
+    }
+}
+
+.btn--oscuro {
+    @include boton(oscuro);
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.btn--claro {
+    @include boton(claro);
+}

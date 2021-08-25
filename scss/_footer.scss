@@ -1,0 +1,44 @@
+footer {
+    background-color: $mainColor;
+    justify-content: space-between;
+    color: $whiteColor;
+    width: 100%;
+}
+
+.fa-whatsapp {
+    position: sticky;
+    font-size: 3rem;
+    bottom: 1rem;
+    float: right;
+    width: 8%;
+    background: none;
+    color: white;
+}
+
+//Empieza BEM 
+.footer__iconos--tamaño {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer__iconos--centrados {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footer__lista {
+    display: inline-block;
+    color: $whiteColor;
+}
+
+.footer__menu {
+    font-size: $fontSizeMedium;
+    text-decoration: none;
+    font-family: $fontMain;
+    cursor: pointer;
+}
+
+//Termina BEM

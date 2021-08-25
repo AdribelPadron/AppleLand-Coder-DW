@@ -1,0 +1,25 @@
+/* Inicio de Operadores Aritméticos con SASS*/
+
+nav {
+    background-color: $mainColor;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    img {
+        width: ($width - 74%) * 2;
+    }
+    ul {
+        li {
+            display: inline;
+            a {
+                color: $whiteColor;
+                font-size: $fontSizeMedium;
+                text-decoration: none;
+                font-family: $fontMain;
+            }
+        }
+    }
+}
+
+
+/* Fin de Operadores Aritméticos con SASS */

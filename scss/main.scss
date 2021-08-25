@@ -1,0 +1,16 @@
+    //imports
+    /* Inicio de Modificaciones de las Variables*/
+    
+    // scss-docs-start theme-colors-map
+    $theme-colors: ( "primary": rgb(27, 27, 27), "secondary": rgb(198, 238, 188), "success": #306474, "info": rgba(240, 162, 45, 0.856), "warning": rgb(56, 54, 54), "danger": #c2adad, "light": white, "dark": black);
+    // scss-docs-end theme-colors-map//
+    /* FIN de Modificaciones de las Variables*/
+    
+    @import "../node_modules/bootstrap/scss/bootstrap";
+    @import "_commons";
+    @import "_reset";
+    @import "_typography";
+    @import "_nav";
+    @import "_content";
+    @import "_footer";
+    @import "_media";
